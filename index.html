@@ -8,27 +8,30 @@
 	</head>
 	<body>
 		<header>
-			<div>
-				<!-- Sebastian Wojnicz -->
-			</div>
-			<div class="navigation">
-				<ul>
-					<li><a href="">O mnie</a></li>
-					<li><a href="">Umiejętności</a></li>
-					<li><a href="">Projekty</a></li>
-					<li><a href="">Kontakt</a></li>
-					<!-- elementy listy muszą mieć id dla linkó -->
-				</ul>
+			<div class="container">
+				<div>
+					<h3>Sebastian</h3>
+					<h3>Wojnicz</h3>
+				</div>
+				<div class="navigation">
+					<ul>
+						<li><a href="#about-me">O mnie</a></li>
+						<li><a href="#skills">Umiejętności</a></li>
+						<li><a href="#projects">Projekty</a></li>
+						<li><a href="#contact">Kontakt</a></li>
+						<!-- elementy listy muszą mieć id dla linków -->
+					</ul>
+				</div>
 			</div>
 		</header>
-		<section class="hero">
+		<section class="about-me" id="about-me">
 			<div>
 				<h1>Sebastian Wojnicz</h1>
 				<h3>Junior Front-End Developer</h3>
 			</div>
 			<!-- w kontenerze max width 1200px -->
 		</section>
-		<section class="skills">
+		<section class="skills" id="skills">
 			<!-- pełna szerokość dla tej sekcji -->
 			<!-- można spróbować obracania 3d dla każdej ikonki umiejętności -->
 			<div>
@@ -40,7 +43,7 @@
 				<!-- HTML5, CSS3, BOOTSTRAP, SASS, GIT, GITHUB, JS, JQUERY, AJAX, API + sprawdzić o czym zapomniałem -->
 			</div>
 		</section>
-		<section class="projects">
+		<section class="projects" id="projects">
 			<div class="container">
 				<div class="each-item">
 					
@@ -63,7 +66,7 @@
 				<!-- miniaturka każdego projektu pod tym layer wysuwany od dołu z linkiem do live wersji i githuba -->
 			</div>
 		</section>
-		<section class="contact">
+		<section class="contact" id="contact">
 			<div class="container">
 				<h1>Kontakt</h1>
 				<p>Zapraszam osoby zainteresowane do kontaktu poprzez </p>
