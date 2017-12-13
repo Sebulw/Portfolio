@@ -1,0 +1,33 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "portfolio main page",
+  "main": "index.js",
+  "dependencies": {
+    "grunt": "^1.0.1"
+  },
+  "devDependencies": {
+    "grunt-autoprefixer": "^3.0.4",
+    "grunt-browser-sync": "^2.2.0",
+    "grunt-contrib-imagemin": "^2.0.1",
+    "grunt-contrib-jshint": "^1.1.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-sass": "^2.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sebulw/Portfolio.git"
+  },
+  "keywords": [
+    "portfolio"
+  ],
+  "author": "Sebastian Wojnicz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sebulw/Portfolio/issues"
+  },
+  "homepage": "https://github.com/Sebulw/Portfolio#readme"
+}
