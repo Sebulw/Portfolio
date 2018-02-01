@@ -1,71 +1,158 @@
 <!DOCTYPE html>
-<html>
+<html lang="pl">
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Sebastian Wojnicz</title>
 		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
 	</head>
 	<body>
+<!-- HEADER -->
 		<header>
 			<div class="container">
-				<div>
+				<div class="name">
 					<h3>Sebastian</h3>
 					<h3>Wojnicz</h3>
 				</div>
 				<div class="navigation">
 					<ul>
+						<!-- można nadać elementom listy hover na odcień niebieskiego + jakiś cień? -->
 						<li><a href="#about-me">O mnie</a></li>
 						<li><a href="#skills">Umiejętności</a></li>
 						<li><a href="#projects">Projekty</a></li>
 						<li><a href="#contact">Kontakt</a></li>
-						<!-- elementy listy muszą mieć id dla linków -->
 					</ul>
 				</div>
 			</div>
 		</header>
-		<section class="about-me" id="about-me">
-			<div>
-				<h1>Sebastian Wojnicz</h1>
-				<h3>Junior Front-End Developer</h3>
+<!-- HERO -->
+		<section class="hero" id="hero">
+			<div class="layer">
+				<div class="box">
+					<h1>Sebastian Wojnicz</h1>
+					<h3>Junior Front-End Developer</h3>
+				</div>
+				<img src="../images/my-photo.jpg" alt="My Photo" height="250" width="250">
+				<!-- zdjęcie nachodzi na header/nawigację (naprawić) -->
 			</div>
-			<!-- w kontenerze max width 1200px -->
 		</section>
+<!-- ABOUT ME -->
+		<section class="about-me" id="about-me">
+			<div class="container">
+				<h1>O mnie</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus non ex in lectus imperdiet elementum at quis sapien. Morbi ut tempus felis, sit amet mattis enim. Suspendisse maximus, dui et gravida tincidunt, sem lectus maximus neque, vel mollis ante leo ullamcorper tortor. Quisque vel pharetra mauris. Praesent et leo dapibus, volutpat elit quis, accumsan risus.</p>
+			</div>
+		</section>
+<!-- SKILLS -->
 		<section class="skills" id="skills">
 			<!-- pełna szerokość dla tej sekcji -->
 			<!-- można spróbować obracania 3d dla każdej ikonki umiejętności -->
-			<div>
-				<h3>Umiejętności</h3>
-				<!-- jakieś krótkie wprowadzenie -->
+			<div class="text">
+				<h1>Umiejętności</h1>
+				<p>Poniżej znajdują się technologie i frameworki którę znam.</p>
 			</div>
-			<div>
-				<!-- jeden div jedna umiejętność można użyć popover'a bootsstrap -->
-				<!-- HTML5, CSS3, BOOTSTRAP, SASS, GIT, GITHUB, JS, JQUERY, AJAX, API + sprawdzić o czym zapomniałem -->
+				<!-- jeden div jedna umiejętność można użyć popover'a bootstrap -->
+				<!-- HTML5, CSS3, -BOOTSTRAP-, SASS, GIT, GITHUB, JS, JQUERY, -AJAX-, -API- + sprawdzić o czym zapomniałem -->
+			<div class="known">
+				<div class="html5 each-skill">
+					<img src="../images/skill icons/html5.png" alt="HTML5">
+					<h4>HTML5</h4>
+				</div>
+				<div class="css3 each-skill">
+					<img src="../images/skill icons/css3.png" alt="CSS3">
+					<h4>CSS3</h4>
+				</div>
+				<div class="rwd each-skill">
+					<img src="../images/skill icons/rwd.png" alt="Responsive Web Design" height="100" width="100">
+					<h4>RWD</h4>
+				</div>
+				<div class="bootstrap each-skill">
+					<img src="../images/skill icons/bootstrap.png" alt="Bootstrap" height="80" width="80">
+					<h4>Bootstrap</h4>
+				</div>
+				<div class="sass each-skill">
+					<img src="../images/skill icons/sass.png" alt="Sass" height="80" width="80">
+					<h4>Sass</h4>
+				</div>
+				<div class="grunt each-skill">
+					<img src="../images/skill icons/grunt.png" alt="Grunt" height="90" width="80">
+					<h4>Grunt</h4>
+				</div>
+				<div class="git each-skill">
+					<img src="../images/skill icons/git.png" alt="Git">
+					<h4>Git</h4>
+				</div>
+				<div class="github each-skill">
+					<img src="../images/skill icons/github.png" alt="GitHub" height="70" width="70">
+					<h4>GitHub</h4>
+				</div>
+				<div class="javascript each-skill">
+					<img src="../images/skill icons/js.png" alt="JavaScript" height="90" width="90">
+					<h4>JavaScript</h4>
+				</div>
+				<div class="jquery each-skill">
+					<img src="../images/skill icons/jq.png" alt="jQuery">
+					<h4>jQuery</h4>
+				</div>
+				<div class="ajax each-skill">
+					<img src="../images/skill icons/ajax.png" alt="AJAX" height="70" width="140">
+					<h4>AJAX</h4>
+				</div>
+				<div class="api each-skill">
+					<img src="../images/skill icons/api.jpg" alt="API" height="70" width="140">
+					<h4>API</h4>
+				</div>
 			</div>
+			<div class="to-learn">
+				<p>Technologie których się uczę lub w niedalekiej przyszłości zamierzam się uczyć</p>
+				<div class="react">
+					<img src="../images/skill icons/react.png" alt="React">
+					<h4>React</h4>
+				</div>
+				<div class="node">
+					<img src="../images/skill icons/node.png" alt="Node">
+					<h4>Node</h4>
+				</div>
+				<div class="wordpress">
+					<img src="../images/skill icons/wordpress.png" alt="WordPress" height="70" width="70">
+					<h4>WordPress</h4>
+				</div>
+			</div>
+			<!-- 11 elementów a niżej technologie do nauki -->
 		</section>
+<!-- PROJECTS -->
 		<section class="projects" id="projects">
 			<div class="container">
-				<div class="each-item">
-					
+				<div class="projects-text">
+					<h1>Projekty</h1>
+					<p>Kilka moich przykładowych projektów z użyciem technologii które znam w wersji live oraz na Git Hubie</p>
 				</div>
-				<div class="each-item">
-					
+				<div class="each-item img1">
+					<div class="layer"></div>
+					<i class="fab fa-github fa-3x"></i>
+					<i class="fas fa-eye fa-3x"></i>
+					<!-- icony z linkiem do live i git hub'a -->
 				</div>
-				<div class="each-item">
-					
+				<div class="each-item img2">
+					<div class="layer"></div>
 				</div>
-				<div class="each-item">
-					
+				<div class="each-item img3">
+					<div class="layer"></div>
 				</div>
-				<div class="each-item">
-					
+				<div class="each-item img4">
+					<div class="layer"></div>
 				</div>
-				<div class="each-item">
-					
+				<div class="each-item img5">
+					<div class="layer"></div>
+				</div>
+				<div class="each-item img6">
+					<div class="layer"></div>
 				</div>
 				<!-- miniaturka każdego projektu pod tym layer wysuwany od dołu z linkiem do live wersji i githuba -->
 			</div>
 		</section>
+<!-- CONTACT -->
 		<section class="contact" id="contact">
 			<div class="container">
 				<h1>Kontakt</h1>
@@ -73,6 +160,7 @@
 				<!-- e-mail, facebook, linkedIN -->
 			</div>
 		</section>
+<!-- FOOTER -->
 		<footer>
 			<!-- copyrights czy coś w ten deseń 2017 i tyle -->
 		</footer>
