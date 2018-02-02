@@ -221,11 +221,11 @@ header
 		text-align: center
 .each-item
 	height: 250px
-	box-shadow: 5px 5px 5px #fff
+	// box-shadow: 50px 50px 50px 50px #fff
 	background-position: center
 	background-size: cover
 	position: relative
-	// overflow: hidden
+	overflow: hidden
 	display: flex
 	justify-content: center
 	align-items: center
@@ -242,16 +242,19 @@ header
 			top: 0
 	i
 		color: #fff
-		// opacity: 0
-		transition: .3s ease-in-out
+		opacity: 0
+		transition: .5s ease-in-out
 		transition-delay: .2s
 		cursor: pointer
-		padding: 25px
-	.each-item:hover i 
-		opacity: 0.8
-	.each-item:hover .layer
-		opacity: 0.8
-		top: 0
+		margin: 25px
+		&:hover
+			color: #000
+			transform: scale(1.30)
+.each-item:hover i 
+	opacity: 0.8
+.each-item:hover .layer
+	opacity: 0.8
+	top: 0
 .img1
 	background-image: url('../images/projects img/news1.png')
 .img2

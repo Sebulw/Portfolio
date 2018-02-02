@@ -242,10 +242,10 @@ header {
 
 .each-item {
   height: 250px;
-  box-shadow: 5px 5px 5px #fff;
   background-position: center;
   background-size: cover;
   position: relative;
+  overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -268,15 +268,22 @@ header {
       top: 0; }
   .each-item i {
     color: #fff;
-    transition: .3s ease-in-out;
+    opacity: 0;
+    transition: .5s ease-in-out;
     transition-delay: .2s;
     cursor: pointer;
-    padding: 25px; }
-  .each-item .each-item:hover i {
-    opacity: 0.8; }
-  .each-item .each-item:hover .layer {
-    opacity: 0.8;
-    top: 0; }
+    margin: 25px; }
+    .each-item i:hover {
+      color: #000;
+      -webkit-transform: scale(1.3);
+              transform: scale(1.3); }
+
+.each-item:hover i {
+  opacity: 0.8; }
+
+.each-item:hover .layer {
+  opacity: 0.8;
+  top: 0; }
 
 .img1 {
   background-image: url("../images/projects img/news1.png"); }
